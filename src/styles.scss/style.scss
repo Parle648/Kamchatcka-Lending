@@ -1,0 +1,123 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700;900&family=Lato:wght@300;400;700&family=Montserrat:wght@400;600;700&display=swap');
+@import 'vars';
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.bacground-slider {
+    position: relative;
+    height: 833px;
+    background-image: url(/src/images/backgrondsliderimg.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.bacground-shadow {
+    position: absolute;
+    background-color: #000;
+    opacity: .2;
+    height: 833px;
+    width: 100%;
+    z-index: 0;
+}
+
+.wrapper {
+    width: 1240px;
+    margin: 0 auto;
+}
+
+.description-wrapper {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    height: 393px;
+    background: linear-gradient(172.92deg, #FFFFFF 2.56%, rgba(255, 255, 255, 0.572235) 32.59%, rgba(255, 255, 255, 0) 54.54%);
+}
+
+header {
+    padding-top: 35px;
+    margin-bottom: 88px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header {
+
+    &__navigation {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+.navigation {
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        list-style-type: none;
+        font-size: 16px;
+        font-weight: 400;
+        width: 25em;
+        margin-right: 4em;
+    }
+
+    &__item,
+    &__makeorder {
+        color: $green;
+        @include basicFont;
+    }
+    
+    &__makeorder {
+        padding: 10px 32px;
+        border: 1px solid $green;
+        border-radius: 5px;
+        background-color: rgba(255, 255, 255, 0);
+        &:hover {
+            cursor: pointer;
+            background-color: rgba(255, 255, 255, 0.545);
+        }
+    }
+}
+
+.description {
+
+    &__subtitle {
+    }
+}
+.main-title {
+    width: 616px;
+    font-size: 58px;
+    line-height: 64px;
+    font-family: 'Inter';
+    font-weight: 900;
+    color: #fff;
+    margin-bottom: 25px;
+
+}
+.tour-spend-period {
+    width: 433px;
+    line-height: 56px;
+    color: #FFFFFF;
+    @include titleFont;
+    font-size: 30px;
+    background: linear-gradient(91.82deg, #FB8B62 5.83%, #F47648 89.73%), #F47648;
+    backdrop-filter: blur(34px);
+    padding: 2px 24px;
+    border-radius: .5em;
+}
+.tour-scedule {
+
+    // .tour-scedule__ttl
+
+    &__ttl {
+    }
+
+    // .tour-scedule__show-scedule
+
+    &__show-scedule {
+    }
+}
