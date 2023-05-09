@@ -1,11 +1,19 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@700;900&family=Lato:wght@300;400;700&family=Montserrat:wght@400;600;700&display=swap');
-@import 'vars';
 
-* {
-    margin: 0;
-    padding: 0;
-}
+@import
+    'generic/normalize.scss';
+
+@import 
+    'elements/links.scss',
+    'elements/lists.scss';
+    
+@import 
+    'design-tokens/colors.scss',
+    'design-tokens/fonts.scss';
+
+@import 
+    'components/header';
 
 .bacground-slider {
     position: relative;
@@ -37,57 +45,6 @@
     background: linear-gradient(172.92deg, #FFFFFF 2.56%, rgba(255, 255, 255, 0.572235) 32.59%, rgba(255, 255, 255, 0) 54.54%);
 }
 
-header {
-    padding-top: 35px;
-    margin-bottom: 88px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.header {
-
-    &__navigation {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-}
-.navigation {
-    &__list {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        list-style-type: none;
-        font-size: 16px;
-        font-weight: 400;
-        width: 25em;
-        margin-right: 4em;
-    }
-
-    &__item,
-    &__makeorder {
-        color: $green;
-        @include basicFont;
-    }
-    
-    &__makeorder {
-        padding: 10px 32px;
-        border: 1px solid $green;
-        border-radius: 5px;
-        background-color: rgba(255, 255, 255, 0);
-        &:hover {
-            cursor: pointer;
-            background-color: rgba(255, 255, 255, 0.545);
-        }
-    }
-}
-
-.description {
-
-    &__subtitle {
-    }
-}
 .main-title {
     width: 616px;
     font-size: 58px;

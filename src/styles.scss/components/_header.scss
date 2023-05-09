@@ -1,0 +1,44 @@
+header {
+    padding-top: 35px;
+    margin-bottom: 88px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header {
+
+    &__navigation {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+.navigation {
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        list-style-type: none;
+        font-size: 16px;
+        font-weight: 400;
+        width: 25em;
+        margin-right: 4em;
+    }
+    &__link,
+    &__makeorder {
+        color: $green;
+        @include basicFont;
+    }
+    
+    &__makeorder {
+        padding: 10px 32px;
+        border: 1px solid $green;
+        border-radius: 5px;
+        background-color: rgba(255, 255, 255, 0);
+        &:hover {
+            cursor: pointer;
+            background-color: rgba(255, 255, 255, 0.545);
+        }
+    }
+}
