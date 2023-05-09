@@ -1,0 +1,132 @@
+.bacground-slider {
+    position: relative;
+    height: 833px;
+    background-image: url(/src/images/backgrondsliderimg.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.bacground-shadow {
+    position: absolute;
+    background-color: #000;
+    opacity: .2;
+    height: 833px;
+    width: 100%;
+    z-index: 0;
+}
+
+.main-title {
+    width: 616px;
+    font-size: 58px;
+    line-height: 64px;
+    font-family: 'Inter';
+    font-weight: 900;
+    color: #fff;
+    margin-bottom: 25px;
+    @include md-d {
+        font-size: 48px;
+        width: 90%;
+    }
+}
+.tour-spend-period {
+    width: 433px;
+    line-height: 56px;
+    color: #FFFFFF;
+    @include titleFont;
+    font-size: 30px;
+    background: linear-gradient(91.82deg, #FB8B62 5.83%, #F47648 89.73%), #F47648;
+    backdrop-filter: blur(34px);
+    padding: 2px 24px;
+    border-radius: .5em;
+    @include md-d {
+        width: 90%;
+    };
+    @include sm-d {
+        font-size: 18px;
+        padding: 0px;
+        text-align: center;
+    }
+}
+.description__subtitle {
+    color: #fff;
+    @include basicFont;
+    font-size: 20px;
+    width: 384px;
+    @include md-d {
+        width: 90%;
+    }
+}
+.tour-scedule {
+    @include flexRowBetween;
+    width: 221px;
+    margin-bottom: 151px;
+    @include md-d {
+    }
+    &__ttl {
+        color: #fff;
+        @include basicFont;
+        font-size: 18px;
+        text-decoration: underline;
+    }
+
+    &__show-scedule {
+        border: 1px solid #fff;
+        border-radius: 50%;
+        width: 64px;
+        height: 64px;
+        @include flexboxCenter;
+        &:hover {
+            .tour-scedule__scedule-arrow {
+                transform: translate(-5px, 5px);
+            }
+        }
+    }
+    &__scedule-arrow {
+        transition-duration: .35s;
+    }
+}
+.social-media {
+    width: 65px;
+    @include flexRowBetween;
+    // &__item {
+    // }
+
+    // &__image {
+    // }
+}
+
+.description {
+    @include flexRowBetween;
+    align-items: flex-end;
+    &__photo-galery {
+    }
+}
+.photo-slider {
+    width: 760px;
+    overflow: hidden
+}
+.photo-slider__line {
+    @include flexRowBetween;
+    align-items: flex-start;
+}
+.slider {
+
+    &__item {
+        position: relative;
+        // width: 269px;
+        height: 267px;
+    }
+
+    &__photo-img {
+        position: absolute;
+    }
+
+    &__inner-ttl {
+        color: #fff;
+        @include basicFont;
+        position: absolute;
+        bottom: 0;
+        left: 12px;
+        width: 127px;
+    }
+}

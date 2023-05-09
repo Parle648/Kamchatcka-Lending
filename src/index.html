@@ -4,8 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700;900&family=Lato:wght@300;400;700&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@700;900&family=Lato:wght@300;400;700&family=Montserrat:wght@400;600;700&display=swap');
+    </style>
     <link rel="stylesheet" href="./styles.css/main.css">
-    <title>Document</title>
+    <title>DreamCam Tour</title>
+    <link rel="icon" href="images/brauserlogo.svg">
 </head>
 <body>
     <div class="bacground-slider">
@@ -23,20 +30,64 @@
                         </ul>
                         <button class="navigation__makeorder">Забронировать</button>
                     </div>
+                    <img class="header__burger" src="images/bourgermenu.svg" alt="burger-menu"></img>
                 </header>
                 <div class="description">
-                    <h1 class="main-title">Мечты о далекой Камчатке - близко</h1>
-                    <h2 class="tour-spend-period">23.06 - 04.07  DREAM TOUR</h2>
-                    <p class="description__subtitle">
-                        Тур перевернет ваш мир с ног на голову и оставит впечатления на всю жизнь. 
-                    </p>
-                    <div class="tour-scedule">
-                        <a class="tour-scedule__ttl">Расписание тура</a>
-                        <img src="" alt="" class="tour-scedule__show-scedule">
+                    <div class="description__tour-info">
+                        <h1 class="main-title">Мечты о далекой Камчатке - близко</h1>
+                        <h2 class="tour-spend-period">23.06 - 04.07  DREAM TOUR</h2>
+                        <p class="description__subtitle">
+                            Тур перевернет ваш мир с ног на голову и оставит впечатления на всю жизнь. 
+                        </p>
+                        <div class="tour-scedule">
+                            <a class="tour-scedule__ttl" href="#!">Расписание тура</a>
+                            <a class="tour-scedule__show-scedule" href="#!">
+                                <img src="images/linkarrow.svg" alt="link-for-tour" class="tour-scedule__scedule-arrow">
+                            </a>
+                        </div>
+                        <div class="social-media">
+                            <a class="social-media__item" href="#!"><img class="social-media__image" src="images/instagramm.svg" alt="social-media"></a>
+                            <a class="social-media__item" href="#!"><img class="social-media__image" src="images/facebook.svg" alt="social-media"></a>
+                        </div>
+                    </div>
+                    <div class="description__photo-galery">
+                        <div class="photo-slider">
+                            <div class="photo-slider__line">
+                                <div class="slider__item" data-head-item="first">
+                                    <img class="slider__photo-img" src="images/photogalaryone.jpg" alt=""></img>
+                                    <h2 class="slider__inner-ttl">Какая-то подпись</h2>
+                                </div>
+                                <div class="slider__item" data-head-item="rest">
+                                    <img class="slider__photo-img" src="images/photogalaryone.jpg" alt=""></img>
+                                    <h2 class="slider__inner-ttl">Какая-то подпись</h2>
+                                </div>
+                                <div class="slider__item" data-head-item="rest">
+                                    <img class="slider__photo-img" src="images/photogalaryone.jpg" alt=""></img>
+                                    <h2 class="slider__inner-ttl">Какая-то подпись</h2>
+                                </div>
+                                <div class="slider__item" data-head-item="rest">
+                                    <img class="slider__photo-img" src="images/photogalaryone.jpg" alt=""></img>
+                                    <h2 class="slider__inner-ttl">Какая-то подпись</h2>
+                                </div>
+                                <div class="slider__item" data-head-item="rest">
+                                    <img class="slider__photo-img" src="images/photogalaryone.jpg" alt=""></img>
+                                    <h2 class="slider__inner-ttl">Какая-то подпись</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider__btns">
+                            <div class="slider__btn">
+                                <img class="slider__arrow-btn" src="images/arrowbtn.svg" alt="">
+                            </div>
+                            <div class="slider__btn">
+                                <img class="slider__arrow-btn" src="images/arrowbtn.svg" alt="">
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <script src="scripts/index.js"></script>
 </body>
 </html>
