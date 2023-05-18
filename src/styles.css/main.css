@@ -1,4 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@700;900&family=Lato:wght@300;400;700&family=Montserrat:wght@400;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -330,6 +335,7 @@ ul {
 @media (max-width: 1299.8px) {
   .wrapper {
     width: 95%;
+    overflow-x: hidden;
   }
 }
 
@@ -425,6 +431,13 @@ header {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  margin-bottom: 64px;
+}
+@media (max-width: 879.8px) {
+  .bacground-slider {
+    margin-bottom: 48px;
+    height: 1080px;
+  }
 }
 
 .bacground-shadow {
@@ -505,6 +518,11 @@ header {
   width: 221px;
   margin-bottom: 151px;
 }
+@media (max-width: 879.8px) {
+  .tour-scedule {
+    margin-bottom: 15px;
+  }
+}
 .tour-scedule__ttl {
   color: #fff;
   font-family: "Lato";
@@ -548,6 +566,7 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-bottom: 32px;
 }
 
 .description {
@@ -564,9 +583,22 @@ header {
       -ms-flex-align: end;
           align-items: flex-end;
 }
+@media (max-width: 579.8px) {
+  .description {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
 .photo-slider {
   width: 760px;
   overflow: hidden;
+}
+@media (max-width: 879.8px) {
+  .photo-slider {
+    width: 305px;
+  }
 }
 
 .photo-slider__line {
@@ -649,6 +681,95 @@ header {
 .slider__btn:last-child {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
+}
+
+.travel-description-article {
+  width: 728px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+@media (max-width: 879.8px) {
+  .travel-description-article {
+    width: 95%;
+  }
+}
+
+.travel-description__ttl {
+  font-family: "Inter";
+  font-weight: 700;
+  color: #212121;
+  font-size: 48px;
+  margin-bottom: 27px;
+}
+@media (max-width: 879.8px) {
+  .travel-description__ttl {
+    font-size: 32px;
+  }
+}
+.travel-description__subttl {
+  font-family: "Lato";
+  font-weight: 400;
+  font-size: 16px;
+  font-size: 24px;
+  color: #5A5A5A;
+  width: 70%;
+  margin-bottom: 35px;
+}
+@media (max-width: 879.8px) {
+  .travel-description__subttl {
+    font-size: 16px;
+  }
+}
+.travel-description__paragraph {
+  font-family: "Lato";
+  font-weight: 400;
+  font-size: 16px;
+  color: #212121;
+  padding: 0;
+  margin-bottom: 64px;
+  width: 72%;
+}
+
+.topics-appearance {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.topics-appearance__item {
+  margin-bottom: 21px;
+}
+.topics-appearance__img {
+  margin-bottom: 8px;
+}
+.topics-appearance__ttl {
+  font-weight: 400;
+  font-size: 14px;
+  font-family: "Montserrat";
+  color: #212121;
+}
+.topics-appearance__subttl {
+  font-family: "Lato";
+  font-weight: 400;
+  font-size: 16px;
+  font-weight: 700;
+  color: #212121;
 }
 
 .secondary-items {

@@ -3,6 +3,7 @@
     margin: 0 auto;
     @include xl-d {
         width: 95%;
+        overflow-x: hidden;
     }
 }
 

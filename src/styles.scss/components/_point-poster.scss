@@ -5,6 +5,11 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    margin-bottom: 64px;
+    @include md-d {
+        margin-bottom: 48px;
+        height: 1080px;
+    }
 }
 .bacground-shadow {
     position: absolute;
@@ -61,6 +66,9 @@
     width: 221px;
     margin-bottom: 151px;
     @include md-d {
+        margin-bottom: 15px;
+    }
+    @include md-d {
     }
     &__ttl {
         color: #fff;
@@ -88,6 +96,7 @@
 .social-media {
     width: 65px;
     @include flexRowBetween;
+    margin-bottom: 32px;
     // &__item {
     // }
 
@@ -98,12 +107,18 @@
 .description {
     @include flexRowBetween;
     align-items: flex-end;
+    @include sm-d {
+        flex-direction: column;
+    }
     &__photo-galery {
     }
 }
 .photo-slider {
     width: 760px;
     overflow: hidden;
+    @include md-d {
+        width: 305px;
+    }
 }
 .photo-slider__line {
     margin-bottom: 20px;

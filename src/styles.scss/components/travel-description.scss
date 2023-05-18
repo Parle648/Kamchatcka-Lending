@@ -1,0 +1,69 @@
+.travel-description-article {
+    width: 728px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    @include md-d {
+        width: 95%;
+    }
+}
+.travel-description {
+
+    &__ttl {
+        @include sliderCartFont;
+        color: $black;
+        font-size: 48px;
+        margin-bottom: 27px;
+        @include md-d {
+            font-size: 32px;
+        }
+    }
+
+    &__subttl {
+        @include basicFont;
+        font-size: 24px;
+        color: $darkgrey;
+        width: 70%;
+        margin-bottom: 35px;
+        @include md-d {
+            font-size: 16px;
+        }
+    }
+    
+    &__paragraph {
+        @include basicFont;
+        color: $black;
+        padding: 0;
+        margin-bottom: 64px;
+        width: 72%;
+    }
+}
+
+.topics-appearance {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    &__item {
+        margin-bottom: 21px;
+    }
+
+    &__img {
+        margin-bottom: 8px;
+    }
+
+    &__ttl {
+        font-weight: 400;
+        font-size: 14px;
+        font-family: 'Montserrat';
+        color: $black;
+    }
+
+    &__subttl {
+        @include basicFont;
+        font-weight: 700;
+        color: $black;
+    }
+}

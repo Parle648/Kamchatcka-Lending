@@ -1,4 +1,4 @@
-export function createSlider(line, items, maxCounter = items.length - 2) {
+export function createSlider(line, items, btns, maxCounter = items.length - 2) {
     line.style.width = `${269 * items.length}px`
 
     items.forEach((item) => {
@@ -10,7 +10,7 @@ export function createSlider(line, items, maxCounter = items.length - 2) {
     let count = 0;
     let margin = 0;
 
-    sliderBtns[0].addEventListener('click', () => {
+    btns[0].addEventListener('click', () => {
         if ( count <= maxCounter ) {
             items[count + 1].classList.remove('secondary-items');
             margin -= 269 + 67;
@@ -29,7 +29,7 @@ export function createSlider(line, items, maxCounter = items.length - 2) {
         }
     })
 
-    sliderBtns[1].addEventListener('click', () => {
+    btns[1].addEventListener('click', () => {
         if ( count > 0 ) {
             items[count].classList.add('secondary-items');
             margin += (269 + 67);
