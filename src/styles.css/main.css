@@ -4,6 +4,10 @@
   padding: 0;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -329,7 +333,7 @@ ul {
 }
 
 .wrapper {
-  width: 1240px;
+  width: 1380px;
   margin: 0 auto;
 }
 @media (max-width: 1299.8px) {
@@ -345,6 +349,15 @@ ul {
   width: 100%;
   height: 393px;
   background: linear-gradient(172.92deg, #FFFFFF 2.56%, rgba(255, 255, 255, 0.572235) 32.59%, rgba(255, 255, 255, 0) 54.54%);
+}
+
+.orange {
+  color: #F47648;
+}
+
+.white {
+  color: #fff;
+  font-weight: 600;
 }
 
 header {
@@ -424,7 +437,8 @@ header {
   }
 }
 
-.bacground-slider {
+.bacground-slider,
+.day-one__photo-slider {
   position: relative;
   height: 833px;
   background-image: url(/src/images/backgrondsliderimg.webp);
@@ -434,7 +448,8 @@ header {
   margin-bottom: 64px;
 }
 @media (max-width: 879.8px) {
-  .bacground-slider {
+  .bacground-slider,
+.day-one__photo-slider {
     margin-bottom: 48px;
     height: 1080px;
   }
@@ -601,7 +616,8 @@ header {
   }
 }
 
-.photo-slider__line {
+.photo-slider__line,
+.day-one__photo-slider__line {
   margin-bottom: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -770,6 +786,224 @@ header {
   font-size: 16px;
   font-weight: 700;
   color: #212121;
+}
+
+.camchatka-plane {
+  background-image: url(/src/images/camchatkaairplain.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 1079px;
+  margin-top: -87px;
+}
+
+.top-gradient {
+  height: 354px;
+  background: linear-gradient(182.6deg, #FFFFFF 3.35%, rgba(255, 255, 255, 0.572235) 36.22%, rgba(255, 255, 255, 0) 65.79%);
+}
+
+.bottom-gradient {
+  position: relative;
+  height: 725px;
+  background: linear-gradient(2.4deg, #000000 12.72%, rgba(0, 0, 0, 0.633721) 44.36%, rgba(0, 0, 0, 0) 70.61%);
+}
+
+.camchatka-string,
+.camchatka-plane__img {
+  position: absolute;
+  right: 0;
+}
+
+.camchatka-plane__img {
+  -webkit-transform: rotate(3.3deg);
+          transform: rotate(3.3deg);
+  top: -35px;
+  right: -7px;
+}
+
+.camchatka-plane__ttl {
+  color: #fff;
+  font-family: "Montserrat";
+  font-weight: 700;
+  width: 662px;
+  margin-bottom: 32px;
+  padding-top: 361px;
+}
+.camchatka-plane__review {
+  color: #BABABA;
+  font-family: "Lato";
+  font-weight: 400;
+  font-size: 16px;
+  width: 299px;
+  margin-bottom: 13px;
+}
+.camchatka-plane__user {
+  color: #fff;
+  font-family: "Lato";
+  font-weight: 400;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.day-one {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(7.21%, #000000), color-stop(68.74%, rgba(0, 0, 0, 0.31)), to(rgba(0, 0, 0, 0))), url(/src/images/dayonebackground.png);
+  background: linear-gradient(180deg, #000000 7.21%, rgba(0, 0, 0, 0.31) 68.74%, rgba(0, 0, 0, 0) 100%), url(/src/images/dayonebackground.png);
+  background-size: cover;
+  height: 932px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  margin-bottom: 230px;
+}
+
+.day-one-innner-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 65px;
+}
+
+.day-one__ttl {
+  color: #fff;
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 40px;
+  width: 458px;
+  margin-bottom: 48px;
+}
+.day-one__paragraph {
+  color: #BABABA;
+  margin-bottom: 20px;
+  width: 461px;
+  text-align: justify;
+  font-family: "Lato";
+  font-weight: 400;
+  font-size: 16px;
+  color: #BABABA;
+  margin-bottom: 20px;
+  width: 461px;
+  text-align: justify;
+  font-family: "Lato";
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.day-one-galery {
+  height: 400px;
+}
+
+.day-one__photo-slider {
+  background-image: none;
+  height: auto;
+  width: 760px;
+  overflow: hidden;
+}
+
+.day-one__slider__item {
+  -webkit-transition-duration: 0.45s;
+          transition-duration: 0.45s;
+  position: relative;
+  height: 267px;
+}
+
+.one-day__slider-btn:last-child {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.one-day__slider-btn {
+  width: 38px;
+  height: 38px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.one-day__slider-btn:hover {
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.village-link {
+  color: #BABABA;
+  text-decoration: underline;
+}
+
+.slider__photo-img {
+  width: 269px;
+  height: 267px;
+}
+
+.days-slider__inner-ttl {
+  width: 280px;
+  position: absolute;
+  left: 16px;
+  bottom: 75px;
+  font-family: "Lato";
+  font-weight: 400;
+  font-size: 16px;
+  font-size: 15px;
+  color: #fff;
+}
+
+.slider__inner-subttl {
+  position: absolute;
+  font-family: "Lato";
+  font-weight: 400;
+  font-size: 16px;
+  color: #BABABA;
+  width: 288px;
+  bottom: 19px;
+  left: 17px;
+}
+
+.clouds {
+  width: 100%;
+  height: 397px;
+  position: absolute;
+  bottom: -230px;
+}
+
+.day-two {
+  position: relative;
+}
+.day-two__ttl {
+  color: #212121;
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 40px;
+  width: 856px;
+  margin-bottom: 48px;
+}
+.day-two__subttl {
+  color: #212121;
+  margin-bottom: 20px;
+  width: 548px;
+  text-align: justify;
+  font-family: "Lato";
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.volcan {
+  position: absolute;
+  right: 0;
 }
 
 .secondary-items {

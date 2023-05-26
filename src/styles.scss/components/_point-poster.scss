@@ -1,4 +1,5 @@
-.bacground-slider {
+.bacground-slider,
+.day-one__photo-slider {
     position: relative;
     height: 833px;
     background-image: url(/src/images/backgrondsliderimg.webp);
@@ -120,7 +121,8 @@
         width: 305px;
     }
 }
-.photo-slider__line {
+.photo-slider__line,
+.day-one__photo-slider__line {
     margin-bottom: 20px;
     @include flexRowBetween;
     transition: .45s;
@@ -131,7 +133,6 @@
     &__item {
         transition-duration: .45s;
         position: relative;
-        // width: 269px;
         height: 267px;
     }
 

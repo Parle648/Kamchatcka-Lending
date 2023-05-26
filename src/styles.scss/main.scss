@@ -6,6 +6,10 @@
     padding: 0;
 }
 
+body {
+    overflow-x: hidden
+}
+
 @import
     'settings/global.scss';
 
@@ -29,7 +33,10 @@
 @import 
     'components/header',
     'components/point-poster',
-    'components/travel-description';
+    'components/travel-description',
+    'components/camchatka-plain.scss',
+    'components/day-one.scss',
+    'components/day-two.scss';
 
 @import 
     'utilities/modifire.scss';

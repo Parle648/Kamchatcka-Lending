@@ -1,0 +1,28 @@
+.day-two {
+    position: relative;
+    &__ttl {
+        color: $black;
+        @include sliderCartFont;
+        font-size: 40px;
+        width: 856px;
+        margin-bottom: 48px;
+    }
+    
+    &__subttls {
+        
+    }
+    
+    &__subttl {
+        color: $black;
+        margin-bottom: 20px;
+        width: 548px;
+        text-align: justify;
+        @include basicFont;
+    }
+}
+.volcan {
+    position: absolute;
+    right: 0;
+}
+.orange {
+}

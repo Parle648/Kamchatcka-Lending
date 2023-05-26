@@ -1,0 +1,55 @@
+.camchatka-plane {
+    background-image: url(/src/images/camchatkaairplain.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 1079px;
+    margin-top: -87px;
+}
+
+.top-gradient {
+    height: 354px;
+    background: linear-gradient(182.6deg, #FFFFFF 3.35%, rgba(255, 255, 255, 0.572235) 36.22%, rgba(255, 255, 255, 0) 65.79%);
+}
+
+.bottom-gradient {
+    position: relative;
+    height: 725px;
+    background: linear-gradient(2.4deg, #000000 12.72%, rgba(0, 0, 0, 0.633721) 44.36%, rgba(0, 0, 0, 0) 70.61%);
+}
+
+.camchatka-string,
+.camchatka-plane__img  {
+    position: absolute;
+    right: 0;
+}
+
+.camchatka-plane__img {
+    transform: rotate(3.3deg);
+    top: -35px;
+    right: -7px;
+}
+
+.camchatka-plane {
+
+    &__ttl {
+        color: #fff;
+        @include titleFont;
+        width: 662px;
+        margin-bottom: 32px;
+        padding-top: 361px;
+    }
+
+    &__review {
+        color: $gray;
+        @include basicFont;
+        width: 299px;
+        margin-bottom: 13px;
+    }
+    
+    &__user {
+        color: #fff;
+        @include basicFont;
+        font-weight: 500;
+    }
+}
