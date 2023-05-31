@@ -1,0 +1,30 @@
+.day-four {
+    background-color: #000;
+    margin-top: -10px;
+    height: 700px;
+    position: relative;
+}
+.day-four-wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 105px;
+}
+.day-four-galery,
+.day-sixth-galery {
+    align-items: start;
+}
+.day-four__ttl {
+    width: 461px;
+    color: #fff;
+}
+.day-four__subttl {
+    width: 461px;
+    color: $gray;
+}
+.seagul {
+    position: absolute;
+    right: 14%;
+    bottom: -50px;
+}

@@ -23,6 +23,29 @@
 .volcan {
     position: absolute;
     right: 0;
+    top: -110px;
+    z-index: -5;
 }
-.orange {
+.day-two__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.day-two-galery {
+
+    &__description {
+        display: flex;
+        flex-direction: column;
+        margin-top: -25px;
+    }
+}
+.day-two {
+
+    &__description-paragraph {
+        @include basicFont;
+        color: $black;
+        margin-bottom: 20px;
+        width: 478px;
+        text-align: justify;
+    }
 }
