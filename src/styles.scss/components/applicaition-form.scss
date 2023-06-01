@@ -1,0 +1,266 @@
+.send-application {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    // &__contacts {
+    // }
+    
+    &__ttl {
+        font-size: 36px;
+        color: $black;
+        @include sliderCartFont;
+        margin-bottom: 26px;
+    }
+}
+.social-media {
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.send-application {
+    &__form {
+        width: 564px;
+        position: relative;
+    }
+    &__user-inputs {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 48px;
+    }
+    &__label {
+        position: relative
+    }
+    &__input-ttl {
+        @include basicFont;
+        font-size: 14px;
+        color: $black;
+        margin-bottom: 16px;
+    }
+    &__input {
+        border: 0px;
+        outline: none;
+        width: 260px;
+        padding-bottom: 16px;
+        border-bottom: 1px solid black;
+    }
+}
+.counter {
+    &__btns {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translate(0, -50%);
+    }
+}
+.minus {
+}
+.plus {
+}
+
+.send-application {
+    &__rate-radiobtns {
+        margin-bottom: 38px;
+    }
+}
+.service {
+    &__label {
+        width: 564px;
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+        margin-bottom: 40px;
+    }
+
+    &__input {
+        display: none;
+    }
+}
+.service__input:checked + .fake-checkbox::before {
+    opacity: 1;
+}
+.fake-checkbox {
+    width: 16px;
+    height: 16px;
+    border: 1px solid $green;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.fake-checkbox::before {
+    content: ' ';
+    opacity: 0;
+    transition: .35s;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: $green;
+}
+.service-cost {
+    &__item {
+        border: 0px;
+        width: 540px;
+        margin: 0;
+        padding: 0;
+    }
+    &__item-ttl,
+    &__item-cost {
+        font-family: "Lato";
+        font-weight: 400;
+        font-size: 20px;
+        color: #212121;
+    }
+
+    &__item-cost {
+        font-size: 24px;
+    }
+}
+.choose-date__input {
+    margin-bottom: 34px;
+    background-color: inherit;
+}
+.send-application__wishes-input {
+    width: 564px;
+    margin-bottom: 47px;
+    background-color: inherit;
+}
+.send-application__form-btn {
+    background-color: #F47648;
+    border: 0px;
+    height: 40px;
+    @include basicFont;
+    color: #fff;
+    border-radius: .333rem;
+    padding: 8px 32px;
+    position: absolute;
+    right: 0;
+}
+
+//order book-block
+
+.order-book {
+    height: 883px;
+    margin-top: -202px;
+    position: relative;
+    z-index: -1;
+    background: linear-gradient(184.22deg, #FFFFFF 1.79%, rgba(255, 255, 255, 0.572235) 18.33%, rgba(255, 255, 255, 0) 51.96%), url(/src/images/orderbookbackground.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 120px;
+}
+.order-book__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 74px;
+}
+.tutorial-book {
+    margin-right: 95px;
+    &__ttl {
+        color: #fff;
+        @include sliderCartFont;
+        font-size: 36px;
+        margin-bottom: 8px;
+    }
+    &__subttl {
+        color: #fff;
+        @include basicFont;
+        font-size: 20px;
+        margin-bottom: 32px;
+    }
+    &__input-label {
+        width: 720px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+    }
+    &__input {
+        width: 563px;
+        background-color: inherit;
+    }
+}
+.send-application {
+
+    &__input {
+        border-color: #fff;
+    }
+
+    &__form-btn {
+        position: relative;
+    }
+}
+
+//about us block
+
+.about-us {
+    position: relative;
+    margin-bottom: 234px;
+    &__ttl {
+        width: 960px;
+        @include sliderCartFont;
+        font-size: 64px;
+        color: $black;
+        margin-bottom: 59px;
+    }
+
+    &__subttl {
+        width: 501px;
+        color: $black;
+        @include basicFont;
+        margin-bottom: 79px;
+    }
+
+    // .about-us__photo-galary
+
+    &__photo-galary {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 56px;
+    }
+
+    // .about-us__item
+
+    &__item {
+    }
+
+    // .about-us__img
+
+    &__img {
+        margin-bottom: 24px;
+    }
+
+    // .about-us__eployee-name
+
+    &__eployee-name {
+        font-family: 'Lato';
+        font-weight: 600;
+        font-size: 18px;
+        color: $black;
+    }
+
+    // .about-us__eployee-social-media
+
+    &__eployee-social-media {
+        @include basicFont;
+        font-size: 18px;
+    }
+}
+.about-us__photo-galary-btns {
+    position: absolute;
+    right: 0;
+}
+
+// footer
+
+footer {
+    background-color: $black;
+    height: 521px;
+    width: 100%;
+}
