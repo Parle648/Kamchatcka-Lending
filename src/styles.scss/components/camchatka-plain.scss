@@ -4,17 +4,16 @@
     background-position: center;
     background-size: cover;
     height: 1079px;
-    margin-top: -87px;
+    margin-top: -200px;
 }
 
 .top-gradient {
-    height: 354px;
-    background: linear-gradient(182.6deg, #FFFFFF 3.35%, rgba(255, 255, 255, 0.572235) 36.22%, rgba(255, 255, 255, 0) 65.79%);
+    height: 242px;
 }
 
 .bottom-gradient {
     position: relative;
-    height: 725px;
+    height: 839px;
     background: linear-gradient(2.4deg, #000000 12.72%, rgba(0, 0, 0, 0.633721) 44.36%, rgba(0, 0, 0, 0) 70.61%);
 }
 
@@ -37,7 +36,7 @@
         @include titleFont;
         width: 662px;
         margin-bottom: 32px;
-        padding-top: 361px;
+        padding-top: 428px;
     }
 
     &__review {

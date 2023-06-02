@@ -333,8 +333,9 @@ ul {
 }
 
 .wrapper {
-  width: 1380px;
+  width: 1250px;
   margin: 0 auto;
+  overflow-x: hidden;
 }
 @media (max-width: 1299.8px) {
   .wrapper {
@@ -371,6 +372,13 @@ ul {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: end;
+}
+
+.day-three-galery,
+.day-fifth-galery,
+.day-sixth-galery,
+.day-seven-galery {
+  width: 610px;
 }
 
 .day-one__photo-slider,
@@ -757,7 +765,7 @@ header {
 }
 
 .photo-slider {
-  width: 760px;
+  width: 729px;
   overflow: hidden;
 }
 @media (max-width: 879.8px) {
@@ -878,17 +886,16 @@ header {
   background-position: center;
   background-size: cover;
   height: 1079px;
-  margin-top: -87px;
+  margin-top: -200px;
 }
 
 .top-gradient {
-  height: 354px;
-  background: linear-gradient(182.6deg, #FFFFFF 3.35%, rgba(255, 255, 255, 0.572235) 36.22%, rgba(255, 255, 255, 0) 65.79%);
+  height: 242px;
 }
 
 .bottom-gradient {
   position: relative;
-  height: 725px;
+  height: 839px;
   background: linear-gradient(2.4deg, #000000 12.72%, rgba(0, 0, 0, 0.633721) 44.36%, rgba(0, 0, 0, 0) 70.61%);
 }
 
@@ -911,7 +918,7 @@ header {
   font-weight: 700;
   width: 662px;
   margin-bottom: 32px;
-  padding-top: 361px;
+  padding-top: 428px;
 }
 .camchatka-plane__review {
   color: #BABABA;
@@ -933,7 +940,7 @@ header {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(7.21%, #000000), color-stop(68.74%, rgba(0, 0, 0, 0.31)), to(rgba(0, 0, 0, 0))), url(/src/images/dayonebackground.png);
   background: linear-gradient(180deg, #000000 7.21%, rgba(0, 0, 0, 0.31) 68.74%, rgba(0, 0, 0, 0) 100%), url(/src/images/dayonebackground.png);
   background-size: cover;
-  height: 932px;
+  height: 823px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -1355,7 +1362,7 @@ header {
 .day-eight {
   width: 100%;
   height: 550px;
-  background: linear-gradient(182.38deg, #FFFFFF 12.12%, rgba(255, 255, 255, 0.69) 47.42%, rgba(255, 255, 255, 0.17) 80.48%, rgba(255, 255, 255, 0) 96.71%), linear-gradient(0deg, #000000 23.35%, rgba(0, 0, 0, 0.572235) 60.21%, rgba(0, 0, 0, 0) 88.82%), url(/src/images/dayeightbackground.png);
+  background: linear-gradient(182.38deg, #FFFFFF 4.12%, rgba(255, 255, 255, 0.69) 17.42%, rgba(255, 255, 255, 0.17) 28.48%, rgba(255, 255, 255, 0) 96.71%), linear-gradient(0deg, #000000 23.35%, rgba(0, 0, 0, 0.572235) 48.21%, rgba(0, 0, 0, 0) 88.82%), url(/src/images/dayeightbackground.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -1822,6 +1829,7 @@ header {
 .about-us {
   position: relative;
   margin-bottom: 234px;
+  height: 993px;
 }
 .about-us__ttl {
   width: 960px;
@@ -1876,6 +1884,159 @@ footer {
   background-color: #212121;
   height: 521px;
   width: 100%;
+}
+
+.footer__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 64px 0px 47px;
+  border-bottom: 1px solid #363636;
+  margin-bottom: 22px;
+}
+.footer__block {
+  height: 312px;
+  padding-left: 42px;
+  border-left: 1px solid;
+  -o-border-image: linear-gradient(270deg, #212121 0%, #535353 51.04%, #212121 100%) 72;
+     border-image: -webkit-gradient(linear, right top, left top, from(#212121), color-stop(51.04%, #535353), to(#212121)) 72;
+     border-image: linear-gradient(270deg, #212121 0%, #535353 51.04%, #212121 100%) 72;
+}
+.footer__block:first-child {
+  border: 0;
+  padding: 0;
+}
+.footer__logo {
+  margin-bottom: 40px;
+}
+.footer__list {
+  list-style-type: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.footer__list-item {
+  margin-bottom: 16px;
+}
+.footer__link {
+  font-family: "Lato";
+  font-weight: 400;
+  font-size: 16px;
+  color: #BABABA;
+}
+.footer__make-subscribe {
+  width: 335px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.footer__mail-link {
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 16px;
+  color: #BABABA;
+}
+.footer__btn {
+  font-family: "Lato";
+  font-weight: 400;
+  font-size: 16px;
+  font-size: 14px;
+  color: #fff;
+  padding: 9px 34px 10px;
+  border: 1px solid #fff;
+  border-radius: 0.33em;
+  background-color: inherit;
+  margin-bottom: 16px;
+}
+.footer__btn:hover {
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+.footer__galary {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 106px 8.5px 106px 8.5px 106px;
+  grid-template-columns: repeat(3, 106px);
+  grid-gap: 8.5px;
+}
+.footer__rils-container {
+  width: 308px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 47px;
+}
+.footer__rils-ttl {
+  width: 227px;
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: 900;
+  color: #fff;
+  margin-bottom: 6px;
+}
+.footer__rils-subttl {
+  font-family: "Lato";
+  font-size: 16px;
+  font-weight: 400;
+  color: #BABABA;
+}
+.footer__social-ttl {
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 8px;
+}
+.footer__number {
+  color: #fff;
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 20px;
+}
+.footer__work-time {
+  font-family: "Montserrat";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 32px;
+  color: #5A5A5A;
+  margin-bottom: 34px;
+}
+.footer__mail-info {
+  width: 187px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  font-family: "Lato";
+  font-weight: 400;
+  font-size: 16px;
+  margin-bottom: 12px;
+}
+.footer__svg {
+  margin-right: 8px;
 }
 
 .secondary-items {

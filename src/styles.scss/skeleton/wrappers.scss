@@ -1,6 +1,7 @@
 .wrapper {
-    width: 1380px;
+    width: 1250px;
     margin: 0 auto;
+    overflow-x: hidden;
     @include xl-d {
         width: 100%;
         overflow-x: hidden;

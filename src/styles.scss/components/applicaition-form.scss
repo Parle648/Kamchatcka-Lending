@@ -201,6 +201,7 @@
 .about-us {
     position: relative;
     margin-bottom: 234px;
+    height: 993px;
     &__ttl {
         width: 960px;
         @include sliderCartFont;
@@ -263,4 +264,187 @@ footer {
     background-color: $black;
     height: 521px;
     width: 100%;
+}
+
+.footer {
+
+    &__container {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        padding: 64px 0px 47px;
+        border-bottom: 1px solid #363636;
+        margin-bottom: 22px;
+    }
+    
+    &__block {
+        height: 312px;
+        padding-left: 42px;
+        border-left: 1px solid;
+        border-image: linear-gradient(270deg, #212121 0%, #535353 51.04%, #212121 100%) 72;
+    }
+    &__block:first-child {
+        border: 0;
+        padding: 0;
+    }
+    &__logo {
+        margin-bottom: 40px;
+    }
+    &__list {
+        list-style-type: none;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    &__list-item {
+        margin-bottom: 16px;
+    }
+
+    &__link {
+        @include basicFont;
+        color: #BABABA;
+    }
+
+    // .footer__mail-link
+    &__make-subscribe {
+        width: 335px;
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+    }
+    &__mail-link {
+        @include sliderCartFont;
+        font-size: 16px;
+        color: #BABABA;
+    }
+
+    // .footer__btn
+
+    &__btn {
+        @include basicFont;
+        font-size: 14px;
+        color: #fff;
+        padding: 9px 34px 10px;
+        border: 1px solid #fff;
+        border-radius: .33em;
+        background-color: inherit;
+        margin-bottom: 16px;
+        &:hover {
+            cursor: pointer;
+            background-color: rgba(255, 255, 255, 0.8);
+        }
+    }
+
+    // .footer__galary
+
+    &__galary {
+        display: grid;
+        grid-template-columns: repeat(3, 106px);
+        grid-gap: 8.5px;
+    }
+
+    // .footer__img
+
+    &__img {
+    }
+
+    // .footer__rils
+    &__rils-container {
+        width: 308px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        margin-bottom: 47px;
+    }
+    &__rils {
+
+    }
+    // .footer__rils-container
+
+    &__rils-block {
+    }
+
+    // .footer__rils-ttl
+
+    &__rils-ttl {
+        width: 227px;
+        font-family: 'Inter';
+        font-size: 16px;
+        font-weight: 900;
+        color: #fff;
+        margin-bottom: 6px;
+    }
+
+    // .footer__rils-subttl
+
+    &__rils-subttl {
+        font-family: 'Lato';
+        font-size: 16px;
+        font-weight: 400;
+        color: $gray;
+    }
+
+    &__social-ttl {
+        font-size: 16px;
+        color: #fff;
+        margin-bottom: 8px;
+    }
+    // .footer__number
+    
+    &__number {
+        color: #fff;
+        @include sliderCartFont;
+        font-size: 20px;
+    }
+    
+    // .footer__work-time
+    
+    &__work-time {
+        font-family: 'Montserrat';
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 32px;
+        color: $darkgrey;
+        margin-bottom: 34px;
+    }
+    
+    // .footer__mail-info
+    
+    &__mail-info {
+        width: 187px;
+        display: flex;
+        align-items: center;
+        color: #fff;
+        @include basicFont;
+        margin-bottom: 12px;
+    }
+
+    &__svg {
+        margin-right: 8px;
+    }
+}
+
+.footer__make-subscribe {
+}
+.send-application {
+
+    // .send-application__contacts
+
+    &__contacts {
+    }
+
+    // .send-application__ttl
+
+    &__ttl {
+    }
+}
+
+.social-media {
+
+    // .social-media__link
+
+    &__link {
+    }
+}
+.social-img {
 }
