@@ -3,6 +3,9 @@
     margin-top: -10px;
     height: 700px;
     position: relative;
+    @include xl-d {
+        height: 1060px;
+    }
 }
 .day-four-wrapper {
     display: flex;
@@ -10,21 +13,40 @@
     align-items: center;
     justify-content: space-between;
     padding-top: 105px;
+    @include xl-d {
+        flex-direction: column-reverse;
+        align-items: flex-start;
+    }
 }
 .day-four-galery,
 .day-sixth-galery {
     align-items: start;
+    margin-bottom: 20px;
+    @include xl-d {
+        align-items: flex-start;
+    }
 }
 .day-four__ttl {
     width: 461px;
     color: #fff;
+    @include sm-d {
+        width: 100%;
+        font-size: 24px;
+        margin-bottom: 24px;
+    }
 }
 .day-four__subttl {
     width: 461px;
     color: $gray;
+    z-index: 7;
+    position: relative;
+    @include md-d {
+        width: 100%;
+    }
 }
 .seagul {
     position: absolute;
     right: 14%;
     bottom: -50px;
+    opacity: .7;
 }

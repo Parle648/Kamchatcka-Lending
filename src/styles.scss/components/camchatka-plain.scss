@@ -37,6 +37,14 @@
         width: 662px;
         margin-bottom: 32px;
         padding-top: 428px;
+        @include md-d {
+            width: 580px;
+            font-size: 24px;
+        }
+        @include sm-d {
+            width: 286px;
+            font-size: 20px;
+        }
     }
 
     &__review {
@@ -44,6 +52,9 @@
         @include basicFont;
         width: 299px;
         margin-bottom: 13px;
+        @include sm-d {
+            width: 278px;
+        }
     }
     
     &__user {

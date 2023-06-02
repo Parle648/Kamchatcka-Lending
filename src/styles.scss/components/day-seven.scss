@@ -28,12 +28,18 @@
     align-items: center;
     justify-content: center;
     margin-bottom: 120px;
+    @include md-d {
+        margin-bottom: 48px;
+    }
 }
 
 .day-eight__ttl,
 .day-eight__subttl {
     text-align: center;
     color: #fff;
+    @include md-d {
+        width: 275px;
+    }
 }
 .day-eight__subttl {
     text-align: inherit;

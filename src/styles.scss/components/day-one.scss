@@ -7,12 +7,22 @@
     background-position: center;
     position: relative;
     margin-bottom: 230px;
+    @include xl-d {
+        height: 1000px;
+    }
+    @include sm-d {
+        margin-bottom: 60px;
+    }
 }
 .day-one-innner-wrapper {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding-top: 65px;
+    @include xl-d {
+        flex-direction: column;
+        align-items: flex-start;
+    }
 }
 .day-one {
     &__ttl {
@@ -21,6 +31,10 @@
         font-size: 40px;
         width: 458px;
         margin-bottom: 48px;
+        @include md-d {
+            font-size: 24px;
+            width: 280px;
+        }
     }
 
     &__paragraph {
@@ -33,6 +47,9 @@
         width: 461px;
         text-align: justify;
         @include basicFont;
+        @include md-d {
+            width: 282px;
+        }
     }
 }
 
@@ -82,4 +99,8 @@
     height: 397px;
     position: absolute;
     bottom: -230px;
+    @include md-d {
+        height: 150px;
+        bottom: -92px;
+    }
 }

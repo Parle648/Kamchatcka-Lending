@@ -3,14 +3,28 @@
     align-items: center;
     justify-content: space-between;
     padding-top: 80px;
+    @include xl-d {
+        flex-direction: column-reverse;
+        align-items: flex-start;
+    }
 }
 .day-three__ttl {
     width: 505px;
+    @include sm-d {
+        width: 100%;
+        font-size: 24px;
+        margin-bottom: 24px;
+    }
 }
 .day-three__subttl {
     width: 501px;
+    @include sm-d {
+        width: 100%;
+    }
 }
 .day-three__background-img {
     width: 100%;
     margin-top: -20px;
+    position: relative;
+    z-index: -1;
 }

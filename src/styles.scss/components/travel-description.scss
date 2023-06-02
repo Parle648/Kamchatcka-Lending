@@ -45,6 +45,10 @@
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    @include sm-d {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
 
     &__item {
         margin-bottom: 21px;

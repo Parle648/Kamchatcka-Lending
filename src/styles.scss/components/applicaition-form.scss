@@ -1,7 +1,13 @@
+.send-application__contacts {
+    margin-bottom: 20px;
+}
 .send-application {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
+    @include md-d {
+        flex-direction: column;
+    }
     // &__contacts {
     // }
     
@@ -18,17 +24,28 @@
     align-items: center;
     justify-content: space-between;
 }
-
+.participant-cost__item-ttl, .participant-cost__item-cost {
+    @include sm-d {
+        font-size: 18px;
+        width: 232px;
+    }
+}
 .send-application {
     &__form {
         width: 564px;
         position: relative;
+        @include sm-d {
+            width: 275px;
+        }
     }
     &__user-inputs {
         display: flex;
         align-items: center;
         justify-content: space-between;
         margin-bottom: 48px;
+        @include md-d {
+            flex-direction: column;
+        }
     }
     &__label {
         position: relative
@@ -151,6 +168,9 @@
     background-position: center;
     background-size: cover;
     margin-bottom: 120px;
+    @include sm-d {
+        margin-top: -104px;
+    } 
 }
 .order-book__container {
     display: flex;
@@ -158,6 +178,10 @@
     justify-content: space-between;
     position: absolute;
     bottom: 74px;
+    @include md-d {
+        // flex-direction: column;
+        flex-wrap: wrap;
+    }
 }
 .tutorial-book {
     margin-right: 95px;
@@ -166,6 +190,12 @@
         @include sliderCartFont;
         font-size: 36px;
         margin-bottom: 8px;
+        @include lg-d {
+            width: 478px;
+        }
+        @include sm-d {
+            width: 275px;
+        }
     }
     &__subttl {
         color: #fff;
@@ -179,10 +209,26 @@
         align-items: center;
         justify-content: space-between;
         position: relative;
+        @include lg-d {
+            width: 487px;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: space-between;
+            height: 105px;
+        }
+        @include sm-d {
+            width: 275px;
+        }
     }
     &__input {
         width: 563px;
         background-color: inherit;
+        @include lg-d {
+            width: 487px;
+        }
+        @include sm-d {
+            width: 275px;
+        }
     }
 }
 .send-application {
@@ -202,12 +248,22 @@
     position: relative;
     margin-bottom: 234px;
     height: 993px;
+    @include md-d {
+        margin-bottom: 48px;
+    }
     &__ttl {
         width: 960px;
         @include sliderCartFont;
         font-size: 64px;
         color: $black;
         margin-bottom: 59px;
+        @include lg-d {
+            width: 650px;
+        }
+        @include sm-d {
+            width: 275px;
+            font-size: 32px;
+        }
     }
 
     &__subttl {
@@ -215,6 +271,9 @@
         color: $black;
         @include basicFont;
         margin-bottom: 79px;
+        @include md-d {
+            width: 89%;
+        }
     }
 
     // .about-us__photo-galary
@@ -229,12 +288,21 @@
     // .about-us__item
 
     &__item {
+        @include lg-d {
+            margin-right: 54px;
+        }
+        @include md-d {
+            width: 275px;
+        }
     }
-
+    
     // .about-us__img
-
+    
     &__img {
         margin-bottom: 24px;
+        @include md-d {
+            width: 275px;
+        }
     }
 
     // .about-us__eployee-name

@@ -6,6 +6,15 @@
     background-size: cover;
     position: relative;
     margin-bottom: 150px;
+    @include lg-d {
+        height: auto;
+        padding-bottom: 170px;
+    }
+}
+.day-fifth-galery {
+    @include md-d {
+        align-items: flex-start;
+    }
 }
 .day-fifth-wrapper,
 .day-sixth-wrapper {
@@ -13,10 +22,18 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    @include lg-d {
+        flex-direction: column-reverse;
+        align-items: flex-start;
+    }
 }
 .day-sixth-wrapper {
     flex-direction: row-reverse;
     padding-top: 177px;
+    @include lg-d {
+        padding-top: 0;
+        flex-direction: column-reverse;
+    }
 }
 .day-sixth__subttls {
     margin-bottom: 35px;
@@ -44,10 +61,16 @@
         padding: 0px 20px 16px 5px;
         border-bottom: 1px solid $gray;
         margin-bottom: 17px;
+        @include md-d {
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: space-between;
+            height: 73px;
+        }
     }
 
     &__name {
-        color: $gray;
+        color: #fff;
         @include basicFont;
         font-size: 17px;
     }

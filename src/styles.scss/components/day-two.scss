@@ -6,10 +6,17 @@
         font-size: 40px;
         width: 856px;
         margin-bottom: 48px;
+        @include md-d {
+            width: auto;
+            font-size: 24px;
+        }
     }
     
     &__subttls {
-        
+        @include sm-d {
+            font-size: 24px;
+            width: 275px;
+        }
     }
     
     &__subttl {
@@ -18,6 +25,12 @@
         width: 548px;
         text-align: justify;
         @include basicFont;
+        @include md-d {
+            width: 400px;
+        }
+        @include sm-d {
+            width: 275px;
+        }
     }
 }
 .volcan {
@@ -25,18 +38,38 @@
     right: 0;
     top: -110px;
     z-index: -5;
+    @include lg-d {
+        width: 57%;
+        top: 0;
+    }
+    @include md-d {
+        top: 135px;
+    }
+    @include sm-d {
+        display: none;
+    }
 }
 .day-two__wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @include xl-d {
+        flex-direction: column-reverse;
+        align-items: flex-start;
+    }
 }
 .day-two-galery {
-
+    align-items: flex-end;
+    @include md-d {
+        align-items: flex-start;
+    }
     &__description {
         display: flex;
         flex-direction: column;
         margin-top: -25px;
+        @include sm-d {
+            align-items: flex-start;
+        }
     }
 }
 .day-two {

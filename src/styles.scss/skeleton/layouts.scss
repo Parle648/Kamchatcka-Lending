@@ -17,6 +17,9 @@
 .day-sixth-galery,
 .day-seven-galery {
     width: 610px;
+    @include sm-d {
+        align-items: flex-start
+    }
 }
 
 .day-one__photo-slider,
@@ -30,6 +33,7 @@
     height: auto;
     width: 760px;
     overflow: hidden;
+    margin-bottom: 0;
 }
 
 .photo-slider__line,
@@ -40,7 +44,6 @@
 .day-fifth__photo-slider__line,
 .day-sixth__photo-slider__line,
 .day-seven__photo-slider__line {
-    margin-bottom: 20px;
     @include flexRowBetween;
     transition: .45s;
     align-items: flex-start;
@@ -95,6 +98,9 @@
     justify-content: space-between;
     flex-direction: row-reverse;
     width: 92px;
+    @include md-d {
+        margin-bottom: 20px;
+    }
 }
 
 .slider__btn:last-child,
